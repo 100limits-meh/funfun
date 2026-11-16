@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<title> Dream Core</title>
+	
+	<style>
+body
+		{
+			background-image: url('https://i.pinimg.com/1200x/df/d6/b0/dfd6b03dc016c22a0a20370e6783d4b2.jpg');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			color: #0f2c3d;
+			min-height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 30px 15px;
+			margin: 0;
+			font-family: sans-serif;
+		}
+
+.conteiner-principal 
+		{
+			max-width: 860px;
+			width: 100%;
+			background: rgba(255, 255, 255, 0.45);
+			backdrop-filter: blur(12px);
+			-webkit-backdrop-filter: blur(12px);
+			border: 2px solid rgba(255, 255, 255, 0.8);
+			border-radius: 24px;
+			padding: 30px;
+			box-shadow:20px 50px rgba(0, 40, 70, 0.35),
+				inset 0 2px 4px rgba(255, 255, 255, 0.9),
+				inset 0 -2px 6px rgba(0, 80, 140, 0.2);
+			box-sizing: border-box;
+		}
+
+.cabecalho
+		{
+			position: relative;
+			text-align: center;
+			padding: 25px 20px;
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(205, 240, 255, 0.5) 100%);
+			border-radius: 18px;
+			border: 1px solid rgba(255, 255, 255, 0.9);
+			box-shadow: 0 6px 15px rgba(0, 60, 100, 0.1);
+			margin-bottom: 20px;
+			overflow: hidden;
+		}
+
+.cabecalho::before
+		{
+			content: '';
+			position: absolute;
+			height: 40%;
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+			pointer-events: none;
+		}
+
+.titulo-principal
+		{
+			font-size: 3.6rem;
+			font-weight: 700;
+			color: #004d73;
+			text-shadow: 0 2px 4px rgba(255, 255, 255, 0.9), 0 0 12px rgba(100, 210, 255, 0.7);
+			letter-spacing: 0.5px;
+			margin: 0;
+		}
+
+.subtitulo 
+		{
+			font-size: 0.95rem;
+			font-style: italic;
+			color: #3b6b85;
+			margin-top: 6px;
+			margin-bottom: 0;
+		}
+
+.menu-navegacao
+		{
+			display: flex;
+			justify-content: center;
+			margin-bottom: 25px;
+								   }
+
+.menu-navegacao ul 
+		{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 10px;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		
+.item-menu 
+		{
+			display: inline-block;
+			text-decoration: none;
+			color: #003652;
+			font-weight: 600;
+			font-size: 0.9rem;
+			padding: 10px 22px;
+			background: linear-gradient(180deg, #ffffff 0%, #cbebff 50%, #7ecaff 51%, #aee2ff 100%);
+			border: 1px solid #52b3ed;
+			border-radius: 50px;
+			box-shadow:
+				0 4px 8px rgba(0, 50, 90, 0.15),
+				inset 0 1px 1px rgba(255, 255, 255, 0.9),
+			inset 0 -2px 4px rgba(0, 70, 130, 0.2);
+			transition: all 0.2s ease;
+		}
+
+.item-menu:hover
+		{
+			transform: translateY(-2px);
+			background: linear-gradient(180deg, #ffffff 0%, #e1f4ff 50%, #9cd8ff 51%, #c5edff 100%);
+			box-shadow:
+				0 6px 14px rgba(0, 80, 150, 0.25),
+				inset 0 1px 2px rgba(255, 255, 255, 1);
+			color: #001f33;
+		}
+
+.corpo-conteudo {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+			gap: 20px;
+}
+
+@media (max-width: 768px)
+		{
+
+			.corpo-conteudo {
+				grid-template-columns: 1fr;
+}
+}
+
+.cartao 
+		{
+
+			background: rgba(255, 255, 255, 0.65);
+			border-radius: 16px;
+			padding: 20px;
+			border: 1px solid rgba(255, 255, 255, 0.95);
+			box-shadow:
+			0 4px 15px rgba(0, 30, 60, 0.05),
+			inset 0 1px 2px rgba(255, 255, 255, 0.8);
+			margin-bottom: 20px;
+}
+
+.titulo-cartao 
+		{
+			font-size: 1.5rem;
+			color: #005a87;
+			border-bottom: 2px solid #96dbff;
+			padding-bottom: 6px;
+			margin-top: 0;
+			margin-bottom: 12px;
+			display: flex;
+			align-items: center;
+			gap: 8px;
+		}
+
+.texto-conteudo
+		{
+			font-size: 1rem;
+			line-height: 1.6;
+			color: #1a4054;
+			text-align: justify;
+			margin: 0;
+		}
+
+.galeria-empilhada 
+		{
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			margin: 0;
+		}
+
+.mini-imagem-lateral
+		{
+			width: 100%;
+			height: 90px;
+			object-fit: cover;
+			border-radius: 10px;
+			border: 1px solid rgba(255, 255, 255, 0.9);
+			box-shadow: 0 2px 6px rgba(0, 40, 70, 0.15);
+		}
+		
+	</style>
+</head>
+	<body>
+
+		<main class="conteiner-principal">
+
+			<header class="cabecalho">
+				<h1 class="titulo-principal">A estética Dream Core</h1>
+				<p class="subtitulo"><i>Você se lembra desse lugar?</i></p>
+			</header>
+
+			<nav class="menu-navegacao">
+				<ul>
+
+					<li><a href="dreamcore.html" class="item-menu">Início</a></li>
+						<li><a href="sobre.html" class="item-menu">Sobre</a></li>
+						<li><a href="surgimento.html" class="item-menu">Onde surgiu</a></li>
+						<li><a href="fonts.html" class="item-menu">Fontes</a></li>
+						<li><a href="conclusao.html" class="item-menu">Conclusão</a></li>
+				</ul>
+			</nav>
+
+			<div class="corpo-conteudo">
+
+				<section class="coluna-conteudo">
+					<article class="cartao">
+						<h2 class="titulo-cartao">O que é?</h2>
+						<p class="texto-conteudo"> 
+O<b> Dreamcore é uma estética visual </b> que recria a atmosfera misteriosa e nostálgica dos
+<b> sonhos e de memórias distantes da infância.</b> Visualmente, destaca-se por usar
+<b>espaços liminares,</b> como corredores vazios, parques desertos e salas nostálgicas que parecem familiares, mas carregam um forte sentimento de isolamento. É comum encontrar elementos surrealistas, como céus coloridos anômalos e figuras sem rosto. A grande graça dessa estética é provocar uma sensação de conforto e estranheza ao mesmo tempo, fazendo com que quem a observe sinta que já esteve naquele lugar em algum <b> sonho antigo.</b>
+</p>
+</article>
+
+					<article class="cartao">
+						<h2 class="titulo-cartao">O que compõe um espaço liminar?</h2>
+						<a class="texto-conteudo"> 
+							<ul>
+								<li> <b> Espaços Liminares e Desertos:</b>Cenários como corredores vazios, parquinhos de
+									infância ao anoitecer, campos abertos sob céus surreais ou salas de jogos sem
+									ninguém. A ausência de pessoas reforça o clima onírico. </li> <br>
+								<li><b> Nostalgia da Infância e dos Anos 90/2000:</b>Elementos visuais retrô, texturas
+									que lembram fitas VHS, câmeras analógicas, brinquedos antigos, cores suaves ou
+									levemente saturadas e iluminação enevoada. </li> <br>
+								<li><b> Surrealismo e Simbolismos: </b>É comum a presença de figuras estranhas ou
+									poéticas, como personagens com objetos no lugar da cabeça (olhos gigantes, lâmpadas,
+									TVs, flores), portas no meio do nada ou céus com duas luas e nuvens flutuantes
+									misteriosas. </li> <br>
+								<li><b> Trilhas Sonoras Específicas:</b>Em formatos de vídeo, o Dreamcore costuma ser
+									acompanhado por sons ambient, lo-fi, faixas desaceleradas (slowed + reverb) ou
+									músicas infantis levemente distorcidas, que reforçam a sensação de transe. </li> </ul>
+						</a>
+
+</section>
+
+
+<aside class="coluna-lateral">
+<section class="cartao">
+<figure class="galeria-empilhada">
+<img src="https://i.pinimg.com/736x/ee/6f/4c/ee6f4c713e0f44ca38ddfcca0e9cee22.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/1c/96/31/1c9631692410ae5be9b07fea6f20e2ff.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/cb/9c/f3/cb9cf3e2d74a8d44e10a9470d0490a32.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/85/ff/9a/85ff9a0b9a71976502abe86809d25f7f.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/1200x/90/b6/4f/90b64f7debccead8a874f8afdb1eda23.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/1200x/b8/b7/8a/b8b78a5b2a6dcf960bf99ea06a4130ee.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/1200x/73/47/a0/7347a087a47facaddac53d6441129c94.jpg" class="mini-imagem-lateral">
+</figure>
+	</section>
+
+</aside>
+</div>
+
+</main>
+
+</body>
+</html>

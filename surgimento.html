@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Onde Surgiu</title>
+<style>
+body {
+background-image: url('https://i.pinimg.com/1200x/df/d6/b0/dfd6b03dc016c22a0a20370e6783d4b2.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+color: #0f2c3d;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px 15px;
+font-family: sans-serif;
+}
+
+.conteiner-principal {
+max-width: 860px;
+width: 100%;
+background: rgba(255, 255, 255, 0.45);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+border: 2px solid rgba(255, 255, 255, 0.8);
+border-radius: 24px;
+padding: 30px;
+box-shadow:
+0 20px 50px rgba(0, 40, 70, 0.35),
+inset 0 2px 4px rgba(255, 255, 255, 0.9),
+inset 0 -2px 6px rgba(0, 80, 140, 0.2);
+box-sizing: border-box;
+}
+
+.cabecalho {
+position: relative;
+text-align: center;
+padding: 25px 20px;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(205, 240, 255, 0.5) 100%);
+border-radius: 18px;
+border: 1px solid rgba(255, 255, 255, 0.9);
+box-shadow: 0 6px 15px rgba(0, 60, 100, 0.1);
+margin-bottom: 20px;
+overflow: hidden;
+}
+
+.cabecalho::before {
+content: '';
+position: absolute;
+height: 40%;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+pointer-events: none;
+}
+
+.titulo-principal {
+font-size: 3.6rem;
+font-weight: 700;
+color: #004d73;
+text-shadow: 0 2px 4px rgba(255, 255, 255, 0.9), 0 0 12px rgba(100, 210, 255, 0.7);
+letter-spacing: 0.5px;
+margin: 0;
+}
+
+.subtitulo {
+font-size: 0.95rem;
+font-style: italic;
+color: #3b6b85;
+margin-top: 6px;
+margin-bottom: 0;
+}
+
+.menu-navegacao {
+display: flex;
+justify-content: center;
+margin-bottom: 25px;
+}
+
+.menu-navegacao ul {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.item-menu {
+display: inline-block;
+text-decoration: none;
+color: #003652;
+font-weight: 600;
+font-size: 0.9rem;
+padding: 10px 22px;
+background: linear-gradient(180deg, #ffffff 0%, #cbebff 50%, #7ecaff 51%, #aee2ff 100%);
+border: 1px solid #52b3ed;
+border-radius: 50px;
+box-shadow:
+0 4px 8px rgba(0, 50, 90, 0.15),
+inset 0 1px 1px rgba(255, 255, 255, 0.9),
+inset 0 -2px 4px rgba(0, 70, 130, 0.2);
+transition: all 0.2s ease;
+}
+
+.item-menu:hover {
+transform: translateY(-2px);
+background: linear-gradient(180deg, #ffffff 0%, #e1f4ff 50%, #9cd8ff 51%, #c5edff 100%);
+box-shadow:
+0 6px 14px rgba(0, 80, 150, 0.25),
+inset 0 1px 2px rgba(255, 255, 255, 1);
+color: #001f33;
+}
+
+.corpo-conteudo {
+display: grid;
+grid-template-columns: 2fr 1fr;
+gap: 20px;
+}
+
+@media (max-width: 768px) {
+.corpo-conteudo {
+grid-template-columns: 1fr;
+}
+}
+
+.cartao {
+background: rgba(255, 255, 255, 0.65);
+border-radius: 16px;
+padding: 20px;
+border: 1px solid rgba(255, 255, 255, 0.95);
+box-shadow:
+0 4px 15px rgba(0, 30, 60, 0.05),
+inset 0 1px 2px rgba(255, 255, 255, 0.8);
+margin-bottom: 20px;
+}
+
+.titulo-cartao {
+font-size: 1.5rem;
+color: #005a87;
+border-bottom: 2px solid #96dbff;
+padding-bottom: 6px;
+margin-top: 0;
+margin-bottom: 12px;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+.texto-conteudo {
+font-size: 1rem;
+line-height: 1.6;
+color: #1a4054;
+margin: 0;
+text-align:justify;
+}
+
+.galeria-empilhada {
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin: 0;
+}
+
+.mini-imagem-lateral {
+width: 100%;
+height: 90px;
+object-fit: cover;
+border-radius: 10px;
+border: 1px solid rgba(255, 255, 255, 0.9);
+box-shadow: 0 2px 6px rgba(0, 40, 70, 0.15);
+}
+</style>
+</head>
+<body>
+
+<main class="conteiner-principal">
+
+<header class="cabecalho">
+<h1 class="titulo-principal">Onde Surgiu</h1>
+<p class="subtitulo"><i>As origens Dreamcore na internet</i></p>
+</header>
+
+<nav class="menu-navegacao">
+<ul>
+<li><a href="dreamcore.html" class="item-menu">Início</a></li>
+<li><a href="sobre.html" class="item-menu">Sobre</a></li>
+<li><a href="surgimento.html" class="item-menu">Onde surgiu</a></li>
+<li><a href="fonts.html" class="item-menu">Fontes</a></li>
+<li><a href="conclusao.html" class="item-menu">Conclusão</a></li>
+</ul>
+</nav>
+
+<div class="corpo-conteudo">
+
+<section class="coluna-conteudo">
+<article class="cartao">
+<h2 class="titulo-cartao">Fóruns da antiga Internet</h2>
+<p class="texto-conteudo">
+O <b>Dreamcore</b> começou a tomar forma no início dos anos 2000 em comunidades de fóruns virtuais como <b>Tumblr</b>, <b>Reddit</b> e <b>4chan</b>. Nessa época, a internet começou a explorar a fascinação coletiva por imagens de <b>"espaços liminares".</b> Lugares físicos desprovidos de pessoas e que passavam uma sensação bizarra de vazio.
+<br><br>
+O movimento cresceu intimamente ligado ao <i>weirdcore</i>, aproveitando-se de fotografias nostálgicas de parques de diversões abandonados, escolas vazias e subúrbios desertos para evocar memórias reprimidas ou sonhos recorrentes.
+</p>
+</article>
+
+<article class="cartao">
+<h2 class="titulo-cartao">Resurgimento pelo Tik Tok</h2>
+<p class="texto-conteudo"> 
+Por volta de <b>2020,</b> com o avanço das redes sociais focadas em vídeos curtos como o <b>TikTok</b>, o Dreamcore ganhou uma enorme escala global.
+<br><br>
+Criadores de conteúdo começaram a produzir edições visuais e sonoras imersivas, utilizando músicas em formato <i>slowed + reverb</i> e imagens surrealistas com texturas analógicas. Essa mistura transformou o Dreamcore em um fenômeno cultural moderno, unindo gerações através de uma nostalgia compartilhada por um passado que nunca existiu de verdade.
+ </p> 
+</article>
+
+</section>
+
+<aside class="coluna-lateral">
+<section class="cartao">
+<figure class="galeria-empilhada">
+<img src="https://i.pinimg.com/1200x/c7/8e/df/c78edfeaa5809994f0a2370957a3b487.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/1200x/94/b4/54/94b454442992d23d7128a8c3cafd98b2.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/1200x/82/9c/19/829c195b96e97a8d47c9e71a289de3cc.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/76/28/1a/76281afa1f011b301e2dd6bdb77eec76.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/b8/42/0f/b8420f1fea519cbcefc4d469091ef553.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/9d/4b/a3/9d4ba36792c105c2c2fbb38d43c068c3.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/67/0b/98/670b989e781ee8dd8ac2e3841916b48f.jpg" class="mini-imagem-lateral">
+</figure>
+</section>
+
+</aside>
+</div>
+
+</main>
+
+</body>
+</html>

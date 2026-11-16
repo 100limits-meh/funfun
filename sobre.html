@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Sobre </title>
+<style>
+body {
+background-image: url('https://i.pinimg.com/1200x/df/d6/b0/dfd6b03dc016c22a0a20370e6783d4b2.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+color: #0f2c3d;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px 15px;
+margin: 0;
+font-family: sans-serif;
+}
+
+.conteiner-principal {
+max-width: 860px;
+width: 100%;
+background: rgba(255, 255, 255, 0.45);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+border: 2px solid rgba(255, 255, 255, 0.8);
+border-radius: 24px;
+padding: 30px;
+box-shadow:
+0 20px 50px rgba(0, 40, 70, 0.35),
+inset 0 2px 4px rgba(255, 255, 255, 0.9),
+inset 0 -2px 6px rgba(0, 80, 140, 0.2);
+box-sizing: border-box;
+}
+
+.cabecalho {
+position: relative;
+text-align: center;
+padding: 25px 20px;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(205, 240, 255, 0.5) 100%);
+border-radius: 18px;
+border: 1px solid rgba(255, 255, 255, 0.9);
+box-shadow: 0 6px 15px rgba(0, 60, 100, 0.1);
+margin-bottom: 20px;
+overflow: hidden;
+}
+
+.cabecalho::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 40%;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+pointer-events: none;
+}
+
+.titulo-principal {
+font-size: 3.6rem;
+font-weight: 700;
+color: #004d73;
+text-shadow: 0 2px 4px rgba(255, 255, 255, 0.9), 0 0 12px rgba(100, 210, 255, 0.7);
+letter-spacing: 0.5px;
+margin: 0;
+}
+
+.subtitulo {
+font-size: 0.95rem;
+font-style: italic;
+color: #3b6b85;
+margin-top: 6px;
+margin-bottom: 0;
+}
+
+.menu-navegacao {
+display: flex;
+justify-content: center;
+margin-bottom: 25px;
+}
+
+.menu-navegacao ul {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.item-menu {
+display: inline-block;
+text-decoration: none;
+color: #003652;
+font-weight: 600;
+font-size: 0.9rem;
+padding: 10px 22px;
+background: linear-gradient(180deg, #ffffff 0%, #cbebff 50%, #7ecaff 51%, #aee2ff 100%);
+border: 1px solid #52b3ed;
+border-radius: 50px;
+box-shadow:
+0 4px 8px rgba(0, 50, 90, 0.15),
+inset 0 1px 1px rgba(255, 255, 255, 0.9),
+inset 0 -2px 4px rgba(0, 70, 130, 0.2);
+transition: all 0.2s ease;
+}
+
+.item-menu:hover {
+transform: translateY(-2px);
+background: linear-gradient(180deg, #ffffff 0%, #e1f4ff 50%, #9cd8ff 51%, #c5edff 100%);
+box-shadow:
+0 6px 14px rgba(0, 80, 150, 0.25),
+inset 0 1px 2px rgba(255, 255, 255, 1);
+color: #001f33;
+}
+
+.corpo-conteudo {
+display: grid;
+grid-template-columns: 2fr 1fr;
+gap: 20px;
+}
+
+@media (max-width: 768px) {
+.corpo-conteudo {
+grid-template-columns: 1fr;
+}
+}
+
+.cartao {
+background: rgba(255, 255, 255, 0.65);
+border-radius: 16px;
+padding: 20px;
+border: 1px solid rgba(255, 255, 255, 0.95);
+box-shadow:
+0 4px 15px rgba(0, 30, 60, 0.05),
+inset 0 1px 2px rgba(255, 255, 255, 0.8);
+margin-bottom: 20px;
+}
+
+.titulo-cartao {
+font-size: 1.5rem;
+color: #005a87;
+border-bottom: 2px solid #96dbff;
+padding-bottom: 6px;
+margin-top: 0;
+margin-bottom: 12px;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+.texto-conteudo {
+font-size: 1rem;
+line-height: 1.6;
+color: #1a4054;
+margin: 0;
+text-align:justify;
+}
+
+.galeria-empilhada {
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin: 0;
+}
+
+.mini-imagem-lateral {
+width: 100%;
+height: 90px;
+object-fit: cover;
+border-radius: 10px;
+border: 1px solid rgba(255, 255, 255, 0.9);
+box-shadow: 0 2px 6px rgba(0, 40, 70, 0.15);
+}
+</style>
+</head>
+<body>
+
+<main class="conteiner-principal">
+
+<header class="cabecalho">
+<h1 class="titulo-principal">Sobre & efeitos</h1>
+<p class="subtitulo"><i>Você nunca esteve lá antes</i></p>
+</header>
+
+<nav class="menu-navegacao">
+<ul>
+<li><a href="dreamcore.html" class="item-menu">Início</a></li>
+<li><a href="sobre.html" class="item-menu">Sobre</a></li>
+<li><a href="surgimento.html" class="item-menu">Onde surgiu</a></li>
+<li><a href="fonts.html" class="item-menu">Fontes</a></li>
+<li><a href="conclusao.html" class="item-menu">Conclusão</a></li>
+</ul>
+</nav>
+
+<div class="corpo-conteudo">
+
+<section class="coluna-conteudo">
+<article class="cartao">
+<h2 class="titulo-cartao">Por que a familiaridade?</h2>
+<p class="texto-conteudo">
+Sabe quando você bate o olho num lugar e tem certeza absoluta de que já esteve ali, mesmo sabendo que é a sua primeira vez? Na verdade, o que rola é que o seu cérebro tem um botãozinho separado para duas coisas: <b> sentir que conhece algo e lembrar de onde conhece. </b>
+No <b>déjà vu</b>, o botão da "sensação de conhecimento" acende sozinho por <b>engano.</b> Ele dispara o alarme gritando <i> "olha, eu conheço isso!",</i> mas quando você vai correndo olhar no arquivo de memórias pra ver de onde, não tem nada lá. Fica aquela confusão esquisita, e para quem gosta do conteúdo, Legal na cabeça!
+<br> <br>
+A nossa mente é mestre em <b> preencher lacunas. </b>
+Quando a gente vê uma imagem com aquela luz suave, meio retrô, com um jeitinho de passado que a gente nunca viveu de verdade, o cérebro pensa:<i> "Nossa, isso tem a exata mesma carinha das minhas memórias de infância".</i> Ele confunde os códigos visuais e cria uma sensação de aconchego e saudade de um lugar onde a gente nunca pisou. É quase como se a gente <i> <b>lembrasse de um sonho que esqueceu de sonhar. </b> </i>
+</p>
+</article>
+
+<article class="cartao">
+<h2 class="titulo-cartao">Explicações</h2>
+<p class="texto-conteudo"> 
+Tem uma <b> teoria </b> na neuropsicologia. Ela diz que, quando a gente vive um momento, o cérebro faz um processo duplo: <i> ele registra a cena como experiência presente (no córtex) e, ao mesmo tempo, joga essa mesma informação direto para o arquivo de memórias de longo prazo.</i>
+<br>
+Só que, em uma fração microscópica de segundo, o canal que guarda a memória de longo prazo pode ser ativado antes ou ao mesmo tempo que a nossa percepção consciente do agora. O resultado? <i>O cérebro recebe a informação do presente vinda direto do <b>"arquivo do passado".</b> É por isso que parece que a cena já aconteceu: tecnicamente, a sua mente acabou de transformar o momento atual em memória antes mesmo de você terminar de vivê-lo!</i>
+<br> <br>
+A gente acha que o tempo é um <b>filme rodando lisinho</b> na nossa cabeça, mas a verdade é que o cérebro faz <b> cortes </b> o tempo todo, como frames de um vídeo. Ele junta pedacinhos de milissegundos para criar a <b> ilusão de um fluxo contínuo </b> e isso dá a ilusão que sua cabeça apenas guarda em ordem. Sem cortar, alterar ou esquecer de nada. Oque é uma <b>grande mentira.</b>
+<br>
+Quando acontece um micro-atraso, por exemplo, quando o olho esquerdo manda a imagem um tiquinho mais rápido que o direito, ou quando a atenção tá dividida, o cérebro tenta consertar a linha do tempo correndo. Para colar os pedacinhos que saíram do lugar, ele acaba criando essa sensação de que aquilo ali já pertence a uma caixinha antiga. É o cérebro fazendo uma "gambiarra" lógica para que a <b> realidade faça sentido. </b>
+</p>
+</article>
+
+</section>
+
+<aside class="coluna-lateral">
+<section class="cartao">
+<figure class="galeria-empilhada">
+<img src="https://i.pinimg.com/736x/4b/3b/f1/4b3bf19aa7930ac107dcfaa1ad579cca.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/0e/9a/af/0e9aafe8e8b2e03b6c3157e9b2ecf127.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/d8/38/f8/d838f86e61e91538058cade7ca5cb82f.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/4f/c8/48/4fc84828814aee327b3fa177c6fc81ae.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/67/56/18/675618208b17ec60b002f8b7fe200957.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/1200x/d0/0d/48/d00d4831ce30e3beb66241f66dbcd87f.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/06/1a/6d/061a6dcd4f61839d40ed70b527c8b364.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/e1/3c/46/e13c4608506aee5fbb8a748ce4255e65.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/13/7c/b4/137cb4a098df8719c3cc0cc2aa31af1c.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/13/21/f1/1321f12801b6edb8ad4d07bf39cf8c29.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/1200x/8c/ee/f9/8ceef9bd6872848954bd39fe47a6d551.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/f6/7e/95/f67e95893e39bed2a3e114801df32978.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/93/46/74/934674ab363462997afc5f85b4e0b590.jpg" class="mini-imagem-lateral">
+</figure>
+</section>
+
+</aside>
+</div>
+
+</main>
+
+</body>
+</html>

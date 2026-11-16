@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> conclusão </title>
+<style>
+body {
+background-image: url('https://i.pinimg.com/1200x/df/d6/b0/dfd6b03dc016c22a0a20370e6783d4b2.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+color: #0f2c3d;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px 15px;
+font-family: sans-serif;
+}
+
+.conteiner-principal {
+max-width: 860px;
+width: 100%;
+background: rgba(255, 255, 255, 0.45);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+border: 2px solid rgba(255, 255, 255, 0.8);
+border-radius: 24px;
+padding: 30px;
+box-shadow:
+0 20px 50px rgba(0, 40, 70, 0.35),
+inset 0 2px 4px rgba(255, 255, 255, 0.9),
+inset 0 -2px 6px rgba(0, 80, 140, 0.2);
+box-sizing: border-box;
+}
+
+.cabecalho {
+position: relative;
+text-align: center;
+padding: 25px 20px;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(205, 240, 255, 0.5) 100%);
+border-radius: 18px;
+border: 1px solid rgba(255, 255, 255, 0.9);
+box-shadow: 0 6px 15px rgba(0, 60, 100, 0.1);
+margin-bottom: 20px;
+overflow: hidden;
+}
+
+.cabecalho::before {
+content: '';
+position: absolute;
+height: 40%;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+pointer-events: none;
+}
+
+.titulo-principal {
+font-size: 3.6rem;
+font-weight: 700;
+color: #004d73;
+text-shadow: 0 2px 4px rgba(255, 255, 255, 0.9), 0 0 12px rgba(100, 210, 255, 0.7);
+letter-spacing: 0.5px;
+}
+
+.subtitulo {
+font-size: 0.95rem;
+font-style: italic;
+color: #3b6b85;
+margin-top: 6px;
+}
+
+.menu-navegacao {
+display: flex;
+justify-content: center;
+margin-bottom: 25px;
+}
+
+.menu-navegacao ul {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+list-style: none;
+}
+
+.item-menu {
+display: inline-block;
+text-decoration: none;
+color: #003652;
+font-weight: 600;
+font-size: 0.9rem;
+padding: 10px 22px;
+background: linear-gradient(180deg, #ffffff 0%, #cbebff 50%, #7ecaff 51%, #aee2ff 100%);
+border: 1px solid #52b3ed;
+border-radius: 50px;
+box-shadow:
+0 4px 8px rgba(0, 50, 90, 0.15),
+inset 0 1px 1px rgba(255, 255, 255, 0.9),
+inset 0 -2px 4px rgba(0, 70, 130, 0.2);
+transition: all 0.2s ease;
+}
+
+.item-menu:hover {
+transform: translateY(-2px);
+background: linear-gradient(180deg, #ffffff 0%, #e1f4ff 50%, #9cd8ff 51%, #c5edff 100%);
+box-shadow:
+0 6px 14px rgba(0, 80, 150, 0.25),
+inset 0 1px 2px rgba(255, 255, 255, 1);
+color: #001f33;
+}
+
+.corpo-conteudo {
+display: grid;
+grid-template-columns: 2fr 1fr;
+gap: 20px;
+}
+
+@media (max-width: 768px) {
+.corpo-conteudo {
+grid-template-columns: 1fr;
+}
+}
+
+.cartao {
+background: rgba(255, 255, 255, 0.65);
+border-radius: 16px;
+padding: 20px;
+border: 1px solid rgba(255, 255, 255, 0.95);
+box-shadow:
+0 4px 15px rgba(0, 30, 60, 0.05),
+inset 0 1px 2px rgba(255, 255, 255, 0.8);
+margin-bottom: 20px;
+	text-align:justify;
+}
+
+.titulo-cartao {
+font-size: 1.5rem;
+color: #005a87;
+margin-top: 0;
+border-bottom: 2px solid #96dbff;
+padding-bottom: 6px;
+margin-bottom: 12px;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+.texto-conteudo {
+font-size: 1rem;
+line-height: 1.6;
+color: #1a4054;
+margin: 0;
+text-align:justify;
+}
+
+.galeria-empilhada {
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin: 0;
+}
+
+.mini-imagem-lateral {
+width: 100%;
+height: 90px;
+object-fit: cover;
+border-radius: 10px;
+border: 1px solid rgba(255, 255, 255, 0.9);
+box-shadow: 0 2px 6px rgba(0, 40, 70, 0.15);
+}
+</style>
+</head>
+<body>
+
+<main class="conteiner-principal">
+
+<header class="cabecalho">
+<h1 class="titulo-principal">Obrigado por visitar a página!</h1>
+<p class="subtitulo"><i>Você se lembra desse lugar?</i></p>
+</header>
+
+<nav class="menu-navegacao">
+<ul>
+<li><a href="dreamcore.html" class="item-menu">Início</a></li>
+<li><a href="sobre.html" class="item-menu">Sobre</a></li>
+<li><a href="surgimento.html" class="item-menu">Onde surgiu</a></li>
+<li><a href="fonts.html" class="item-menu">Fontes</a></li>
+<li><a href="conclusao.html" class="item-menu">Conclusão</a></li>
+</ul>
+</nav>
+
+<div class="corpo-conteudo">
+
+<section class="coluna-conteudo">
+<article class="cartao">
+<h2 class="titulo-cartao"> Serventia </h2>
+<p class="texto-conteudo">
+<i> Esse site foi criado para servir de demonstração prática do curso "Programador Web" e provavelmente ficará exposto na internet. </i>
+</p>
+</article>
+
+<article class="cartao">
+	
+<h2 class="titulo-cartao"> Conhecimentos gerais</h2>
+<p class="texto-conteudo"> 
+	
+O curso em si, capacita o aluno a criar, programar e gerenciar sites e aplicações para a internet com aulas 100% práticas e ótima tutoria. <br>
+<b> O que é ensinado: </b>
+<ul>
+<b> <li> HTML: Estruturação de textos, imagens, links e seções. </li> </b>
+O HTML serve para estruturar e organizar o conteúdo da página. <i> Ele não é uma linguagem de programação,</i>. mas sim uma linguagem de marcação. É ele quem diz ao navegador o que é cada elemento do site. Basicamente servindo de estrutura. <br><br>
+<b><li> CSS: cores, fontes, espaçamentos e layouts. </li></b>
+O CSS serve para dar estilo, beleza e layout ao conteúdo estruturado pelo HTML. Sem o CSS, todos os sites seriam apenas textos pretos em fundo branco alinhados à esquerda. Uma piada interna que é muito usada é de que o CSS é a "maquiagem" do site. <br><br>
+
+<b><li> JavaScript: Introdução à linguagem para adicionar animações e validação de formulários). </li></b>
+O JavaScript serve para criar interatividade e dinamismo. Ele roda diretamente no navegador do usuário para fazer o site "pensar" e reagir a ações (como os botões desse mesmo site).
+<br> <br> </ul>
+
+<b> O que aprendi por fora: </b> <br> <br>
+<b> Design Responsivo: Técnicas para fazer com que o site se adapte perfeitamente a telas de computadores, tablets e celulares. </b>
+Propriedades de Estilização: É o nome de comandos como o box-shadow (sombreamento) e border-bottom (linha abaixo do título) 
+
+</article>
+
+</section>
+
+<aside class="coluna-lateral">
+<section class="cartao">
+<figure class="galeria-empilhada">
+<img src="https://i.pinimg.com/736x/9f/a8/9c/9fa89cb20a706bdd0a46795538715abb.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/1e/0d/8f/1e0d8ff87be44abc3ed7d9ccb98eccc6.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/44/e9/9a/44e99a5681c2017c728b53dcb0f39353.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/f9/0c/90/f90c90706fb7025397412abf8ecc4887.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/a3/67/0a/a3670a398afb60be4b80c6477e1d90f9.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/1200x/4f/86/10/4f86108414ec6b2310f32221efb90994.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/80/6d/46/806d46a018ba5093d80f059afa5a9125.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/1200x/83/c6/4c/83c64c655665bce842dcd82fc285b69c.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/e3/b4/60/e3b460d0193c4e8e88b0095b5c1cf9d9.jpg" class="mini-imagem-lateral">
+
+</figure>
+</section>
+
+</aside>
+</div>
+
+</main>
+
+</body>
+</html>

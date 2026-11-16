@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Recursos </title>
+<style>
+body {
+background-image: url('https://i.pinimg.com/1200x/df/d6/b0/dfd6b03dc016c22a0a20370e6783d4b2.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+color: #0f2c3d;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px 15px;
+margin: 0;
+font-family: sans-serif;
+}
+
+.conteiner-principal {
+max-width: 860px;
+width: 100%;
+background: rgba(255, 255, 255, 0.45);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+border: 2px solid rgba(255, 255, 255, 0.8);
+border-radius: 24px;
+padding: 30px;
+box-shadow:
+0 20px 50px rgba(0, 40, 70, 0.35),
+inset 0 2px 4px rgba(255, 255, 255, 0.9),
+inset 0 -2px 6px rgba(0, 80, 140, 0.2);
+box-sizing: border-box;
+}
+
+.cabecalho {
+position: relative;
+text-align: center;
+padding: 25px 20px;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(205, 240, 255, 0.5) 100%);
+border-radius: 18px;
+border: 1px solid rgba(255, 255, 255, 0.9);
+box-shadow: 0 6px 15px rgba(0, 60, 100, 0.1);
+margin-bottom: 20px;
+overflow: hidden;
+}
+
+.cabecalho::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 40%;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+pointer-events: none;
+}
+
+.titulo-principal {
+font-size: 3.6rem;
+font-weight: 700;
+color: #004d73;
+text-shadow: 0 2px 4px rgba(255, 255, 255, 0.9), 0 0 12px rgba(100, 210, 255, 0.7);
+letter-spacing: 0.5px;
+margin: 0;
+}
+
+.subtitulo {
+font-size: 0.95rem;
+font-style: italic;
+color: #3b6b85;
+margin-top: 6px;
+margin-bottom: 0;
+}
+
+.menu-navegacao {
+display: flex;
+justify-content: center;
+margin-bottom: 25px;
+}
+
+.menu-navegacao ul {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.item-menu {
+display: inline-block;
+text-decoration: none;
+color: #003652;
+font-weight: 600;
+font-size: 0.9rem;
+padding: 10px 22px;
+background: linear-gradient(180deg, #ffffff 0%, #cbebff 50%, #7ecaff 51%, #aee2ff 100%);
+border: 1px solid #52b3ed;
+border-radius: 50px;
+box-shadow:
+0 4px 8px rgba(0, 50, 90, 0.15),
+inset 0 1px 1px rgba(255, 255, 255, 0.9),
+inset 0 -2px 4px rgba(0, 70, 130, 0.2);
+transition: all 0.2s ease;
+}
+
+.item-menu:hover {
+transform: translateY(-2px);
+background: linear-gradient(180deg, #ffffff 0%, #e1f4ff 50%, #9cd8ff 51%, #c5edff 100%);
+box-shadow:
+0 6px 14px rgba(0, 80, 150, 0.25),
+inset 0 1px 2px rgba(255, 255, 255, 1);
+color: #001f33;
+}
+
+.corpo-conteudo {
+display: grid;
+grid-template-columns: 2fr 1fr;
+gap: 20px;
+}
+
+@media (max-width: 768px) {
+.corpo-conteudo {
+grid-template-columns: 1fr;
+}
+}
+
+.cartao {
+background: rgba(255, 255, 255, 0.65);
+border-radius: 16px;
+padding: 20px;
+border: 1px solid rgba(255, 255, 255, 0.95);
+box-shadow:
+0 4px 15px rgba(0, 30, 60, 0.05),
+inset 0 1px 2px rgba(255, 255, 255, 0.8);
+margin-bottom: 20px;
+}
+
+.titulo-cartao {
+font-size: 1.5rem;
+color: #005a87;
+border-bottom: 2px solid #96dbff;
+padding-bottom: 6px;
+margin-top: 0;
+margin-bottom: 15px;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+/* Estilização para as caixas de links */
+.lista-links {
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+.link-bloco {
+display: block;
+padding: 12px 16px;
+background: rgba(255, 255, 255, 0.7);
+border: 1px solid rgba(126, 202, 255, 0.8);
+border-radius: 12px;
+text-decoration: none;
+color: #0f2c3d;
+transition: all 0.2s ease;
+box-shadow: 0 2px 5px rgba(0, 40, 70, 0.05);
+}
+
+.link-bloco:hover {
+background: rgba(255, 255, 255, 0.95);
+transform: translateX(4px);
+border-color: #005a87;
+box-shadow: 0 4px 10px rgba(0, 80, 140, 0.15);
+}
+
+.link-titulo {
+font-weight: 700;
+color: #004d73;
+display: block;
+font-size: 1.05rem;
+margin-bottom: 4px;
+}
+
+.link-descricao {
+font-size: 0.85rem;
+color: #3b6b85;
+margin: 0;
+}
+
+.galeria-empilhada {
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin: 0;
+}
+
+.mini-imagem-lateral {
+width: 100%;
+height: 90px;
+object-fit: cover;
+border-radius: 10px;
+border: 1px solid rgba(255, 255, 255, 0.9);
+box-shadow: 0 2px 6px rgba(0, 40, 70, 0.15);
+}
+</style>
+</head>
+<body>
+
+<main class="conteiner-principal">
+
+<header class="cabecalho">
+<h1 class="titulo-principal"> Recursos usados</h1>
+<p class="subtitulo"><i> Na verdade, foi tudo um sonho.</i></p>
+</header>
+
+<nav class="menu-navegacao">
+<ul>
+<li><a href="dreamcore.html" class="item-menu">Início</a></li>
+<li><a href="sobre.html" class="item-menu">Sobre</a></li>
+<li><a href="surgimento.html" class="item-menu">Onde surgiu</a></li>
+<li><a href="fonts.html" class="item-menu">Fontes</a></li>
+<li><a href="conclusao.html" class="item-menu">Conclusão</a></li>
+</ul>
+</nav>
+
+<div class="corpo-conteudo">
+
+<section class="coluna-conteudo">
+<article class="cartao">
+<h2 class="titulo-cartao">Sites base</h2>
+<ul class="lista-links">
+<li>
+<a href="https://aesthetics.fandom.com/wiki/Dreamcore" target="_blank" class="link-bloco">
+<span class="link-titulo"> Wikifandom - Dreamcore</span>
+<p class="link-descricao"> Informações gerais sobre a estética. Passei a maior parte do meu tempo aqui.</p>
+</a>
+</li>
+<li>
+<a href="https://aesthetics.fandom.com/wiki/Liminal_Space" target="_blank" class="link-bloco">
+<span class="link-titulo">Wikipedia - Dreamcore (aesthetic)</span>
+<p class="link-descricao"> Uma das maiores fontes de informações que tive. Um pouco sem graça e sem cor.</p>
+</a>
+</li>
+</ul>
+</article>
+
+<article class="cartao">
+<h2 class="titulo-cartao">Mídia & Referências</h2>
+<ul class="lista-links">
+<li>
+<a href="https://pin.it/4umWBUml6" target="_blank" class="link-bloco">
+<span class="link-titulo">Minha galeria no Pinterest </span>
+<p class="link-descricao">Pastas das imagens usadas para a confecção do site. Nem metade foi utilizada e ainda tiveram algumas de fora... De qualquer jeito, foram todas tiradas do Pinterest</p>
+</a>
+</li>
+<li>
+<a href="https://open.spotify.com/playlist/4kIGpg1MrO8VgpbZJcikoA?si=7SdPpxyySKGMdAKb9k_UAg" target="_blank" class="link-bloco">
+<span class="link-titulo"> playlist</span>
+<p class="link-descricao">Essas músicas tocaram por tanto tempo nos meus fones que devo ter decorado as 8 primeiras.</p>
+</a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/portuguese/" target="_blank" class="link-bloco">
+<span class="link-titulo"> Recursos Extras </span>
+<p class="link-descricao">Apenas um site que andei pegando algumas dicas. Alem do Google e X, claro.</p>
+</a>
+</li>
+</ul>
+</article>
+
+</section>
+
+<aside class="coluna-lateral">
+<section class="cartao">
+<figure class="galeria-empilhada">
+<img src="https://i.pinimg.com/736x/0b/4c/dd/0b4cdd202002cb6f3c60572abc56f92c.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/26/d0/b6/26d0b66c3a944d0f77f4e46dcf16653f.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/1200x/7c/2f/e2/7c2fe2fbc7531917045a54ae29f9cd89.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/4b/3b/f1/4b3bf19aa7930ac107dcfaa1ad579cca.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/39/0f/0f/390f0faf3c271c71345bc8a065a4982b.jpg" class="mini-imagem-lateral">
+<img src="https://i.pinimg.com/736x/7d/ac/85/7dac85dc74a7d01331bb8d26f6ad406a.jpg" class="mini-imagem-lateral">
+</figure>
+</section>
+
+</aside>
+</div>
+
+</main>
+
+</body>
+</html>
